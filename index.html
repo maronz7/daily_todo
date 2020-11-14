@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>毎日積み上げTodoアプリ</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="todoList">
+      <header>
+        <h1 id="title">Daily Todo List</h1>
+      </header>
+
+      <div class="list-area">
+        <ul class="list-group todos">
+          <!-- javaScript でリストを追加する予定-->
+        </ul>
+        <div class="other-function">
+          <button id="all-reset">全タスク完了&リセット</button>
+        </div>
+      </div>
+
+      <form class="add">
+        <label>タスクを追加</label>
+        <input type="text" class="form-control" name="add" placeholder="New Task">
+      </form>
+    </div>
+
+    <div id="calendar">
+      <table>
+        <thead>
+          <tr>
+            <th id="prev">&laquo;</th>
+            <th id="currentDate" colspan="5">2020/05</th>
+            <th id="next">&raquo;</th>
+          </tr>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td id="today" colspan="7">Today</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/calendar.js"></script>
+</body>
+
+</html>

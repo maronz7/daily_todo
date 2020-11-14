@@ -1,0 +1,98 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: #17b1cc;
+}
+
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#todoList {
+  max-width: 800px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#calendar{
+  margin-top: 75px;
+  padding-left: 100px;
+  width: 30%;
+  height: 50%;
+}
+
+#title{
+  color: white;
+}
+
+label {
+  color: white;
+  margin-right: 10px;
+}
+
+input[type=text],
+input[type=text]:focus {
+  color: #333;
+  border: none;
+  background: white;
+  max-width: 800px;
+  font-size: 24px;
+}
+
+.list-area {
+  background:#eee;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* 追加 */
+.todos li {
+  background: white;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  list-style: none;
+  max-width: 300px;
+  border-radius: 5px;
+  font-size: 24px;
+
+}
+
+/* 追加フォーム */
+.add{
+  margin-top: 50px;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+.task-name{
+  cursor: pointer;
+}
+
+/* 削除アイコン */
+.delete {
+  cursor: pointer;
+  color: orange;
+  float: right;
+  margin-right: 5px;
+}
+
+/* 他機能 */
+.other-function {
+  margin-top: 20px;
+}
+
+#all-reset{
+  background: rgb(2, 102, 252);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
